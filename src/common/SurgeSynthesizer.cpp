@@ -83,7 +83,7 @@ SurgeSynthesizer::SurgeSynthesizer(PluginLayer *parent, const std::string &suppl
         }
     }
 
-    srand((unsigned)time(nullptr));
+    srand(12344); // only as a backup
     // TODO: FIX SCENE ASSUMPTION
     memset(storage.getPatch().scenedata[0], 0, sizeof(pdata) * n_scene_params);
     memset(storage.getPatch().scenedata[1], 0, sizeof(pdata) * n_scene_params);

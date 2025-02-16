@@ -26,6 +26,7 @@ def test_render_note():
     s.processMultiBlock(buf)
     assert not np.all(buf == 0.0)
 
+
 def test_render_note_with_input():
     """
     Test rendering a note with an input buffer into an output buffer.

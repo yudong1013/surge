@@ -1747,7 +1747,7 @@ class alignas(16) SurgeStorage
     struct RNGGen
     {
         RNGGen()
-            : g(std::chrono::system_clock::now().time_since_epoch().count()), d(0, RAND_MAX),
+            : g(12344), d(0, RAND_MAX),
               pm1(-1.f, 1.f), z1(0.f, 1.f), u32(0, 0xFFFFFFFF)
         {
         }
